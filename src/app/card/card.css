@@ -1,0 +1,31 @@
+.industry-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 18rem;  /* increased from 12rem */
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .industry-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  .industry-card img {
+    height: 120px;  /* increased from 80px */
+    object-fit: contain;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .industry-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .industry-card .card-body {
+    padding: 0.75rem;  /* increased padding */
+  }
+
+  .industry-card .card-text {
+    font-size: 1.1rem; /* slightly bigger font */
+    margin: 0;
+  }

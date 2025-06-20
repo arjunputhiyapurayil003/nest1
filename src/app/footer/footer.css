@@ -1,0 +1,22 @@
+.site-footer {
+    background-color: #222;
+    color: #eee;
+    padding: 15px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-content p {
+    margin: 0;
+  }
+  .footer-content span {
+    color: #888;
+    user-select: none;
+  }

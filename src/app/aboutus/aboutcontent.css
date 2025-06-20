@@ -1,0 +1,89 @@
+main.accordion {
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      background: transparent;
+    }
+
+    /* Accordion item wrapper flex */
+    .accordion-item-flex {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 10px 25px;
+      cursor: pointer;
+      background: #f8f9fa;
+      border-bottom: 1px solid #ddd;
+      border-radius: 10px 10px 0 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-item-flex:hover {
+      background-color: #e7f1ff;
+    }
+
+    /* Image next to header button */
+    .accordion-image {
+      width: 140px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    /* Accordion header button styling */
+    .accordion-button {
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: #007bff;
+      background: none;
+      border: none;
+      padding: 0;
+      flex-grow: 1;
+      text-align: left;
+      box-shadow: none;
+    }
+
+    /* Remove default accordion-button arrow */
+    .accordion-button::after {
+      display: none;
+    }
+
+    /* Custom arrow */
+    .custom-arrow {
+      font-size: 1.3rem;
+      margin-left: 8px;
+      color: #007bff;
+      transition: transform 0.3s ease;
+    }
+
+    /* Rotate arrow when expanded */
+    .accordion-button.collapsed + .custom-arrow {
+      transform: rotate(0deg);
+    }
+    .accordion-button:not(.collapsed) + .custom-arrow {
+      transform: rotate(90deg);
+    }
+
+    /* Accordion body */
+    .accordion-collapse {
+      padding: 20px 25px;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      color: #2c3e50;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      margin-top: 60px;
+    }

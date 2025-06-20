@@ -1,0 +1,53 @@
+ #carouselExampleCaptions {
+    max-width: 100%;
+  }
+
+  #carouselExampleCaptions .carousel-inner {
+    height: 550px; /* increased from 450px */
+  }
+
+  #carouselExampleCaptions .carousel-inner img {
+    height: 550px; /* match carousel height */
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* First slide caption - centered, bold white text */
+  #carouselExampleCaptions .carousel-item.active.carousel-item-first .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    max-width: 80%;
+    font-weight: 700;
+  }
+
+  #carouselExampleCaptions .carousel-item.active.carousel-item-first .carousel-caption h5 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  #carouselExampleCaptions .carousel-item.active.carousel-item-first .carousel-caption p {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  /* Other slides caption - bottom left, normal weight */
+  #carouselExampleCaptions .carousel-item:not(.carousel-item-first) .carousel-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: auto;
+    top: auto;
+    text-align: left;
+    font-weight: 400;
+    max-width: 60%;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+  }

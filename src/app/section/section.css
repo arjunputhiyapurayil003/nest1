@@ -1,0 +1,13 @@
+.stat-card {
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .stat-card:hover h2 {
+    color: #1e90ff !important;
+    text-shadow: 0 0 10px #1e90ff;
+    transform: scale(1.1);
+  }
+
+  .stat-card:hover p {
+    color: #c9d9ff !important;
+  }
